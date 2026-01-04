@@ -81,3 +81,43 @@
 - источник [huggingface.co -> all-MiniLM-L6-v2](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2#all-minilm-l6-v2)
 - Размер модели: 22.7M параметров
 - Размер эмбеддингов: 384
+
+# Задание 4. Реализация RAG-бота с техниками промптинга
+
+## Примеры успешных диалогов
+
+[example_0](img/example_0.jpg)
+![example_0](img/example_0.jpg)
+
+[example_1](img/example_1.jpg)
+![example_1](img/example_1.jpg)
+
+[example_2](img/example_2.jpg)
+![example_2](img/example_2.jpg)
+
+## Пример, когда бот будет отвечать: «Я не знаю»
+
+[example_unknown](img/example_unknown.jpg)
+![example_unknown](img/example_unknown.jpg)
+
+
+# Задание 5. Включение слоёв защиты
+
+Что сделано:
+- Pre-prompt защита (Доработано System Message) 
+- Фильтрация вредоносного контента (Pre-processing)
+- Проверка запросов (Input Validation)
+- Post-проверка ответов (Output Validation)
+
+Выводы:
+    Просто хорошего промпта мало. Обязательно нужно использовать Post-проверки.
+## Пример запроса без защиты
+
+[not_secured](img/not_secured.jpg)
+![not_secured](img/not_secured.jpg)
+
+## Пример запроса с защитой
+
+[secured](img/secured.jpg)
+
+![secured](img/secured.jpg)
